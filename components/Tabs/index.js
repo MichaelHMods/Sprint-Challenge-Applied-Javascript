@@ -35,9 +35,19 @@ const jsNode = document.createElement('div');
 jsNode.classList.add('tab');
 jsNode.textContent = `node.js`;
 
+const tabSection = document.querySelector('.topics')
 
-return 
 
+console.log('testing');
+// nest section
+tabSection.appendChild(java);
+tabSection.appendChild(BOOT);
+tabSection.appendChild(tech);
+tabSection.appendChild(jquer);
+tabSection.appendChild(jsNode);
+
+console.log(tabSection);
+return tabSection;
 }
 
 
